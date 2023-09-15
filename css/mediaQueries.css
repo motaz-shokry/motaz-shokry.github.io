@@ -1,0 +1,146 @@
+@media screen and (max-width:1200px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+
+  .details-containers,
+  .skills-container,
+  .projects-container {
+    flex-wrap: wrap;
+  }
+
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+  
+
+  #profile,
+  #about .about-container {
+    display: block;
+  }
+
+  #experience,
+  .experience-container {
+    margin-top: 2rem;
+  }
+
+  .arrow-icon {
+    display: none;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  section,
+  #about .about-container {
+    height: fit-content;
+  }
+
+  .section-img {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+
+  #about .details-containers,
+  #experience .skills-container,
+  #projects .projects-container {
+    margin-top: 0;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  #contact,
+  footer {
+    height: 40vh;
+  }
+
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  .details-containers,
+  .skills-container,
+  .projects-container,
+  .contact-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  #contact .contact-container .contact-info  {
+    margin: 0;
+  }
+
+  #contact .contact-container .contact-info p ,
+  .links li a {
+    font-size: 0.8rem;
+  }
+
+  #projects .project-container h2,
+  #experience .skills-container .title  {
+    font-size: 1.25rem;
+  }
+
+  nav .logo {
+    font-size: 1.5rem;
+  }
+
+  .section-img {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+  }
+
+  #profile .section-text-p2 {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  #about .text-container {
+    text-align: justify;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  footer nav .links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
