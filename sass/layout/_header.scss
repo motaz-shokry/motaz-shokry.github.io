@@ -1,0 +1,109 @@
+header {
+    nav {
+        justify-content: space-around;
+        align-items: center;
+        height: 17vh;
+        display: flex;
+
+        .logo {
+            font-size: 4.8rem;
+            font-family: 'Kaushan Script', cursive;
+            color: $main-color;
+
+            &:hover {
+                cursor: default;
+            }
+        }
+
+        .links {
+            gap: 3.2rem;
+            list-style: none;
+            font-size: 2.5rem;
+            display: flex;
+
+            a {
+                color: $blak-color;
+                text-decoration: none;
+                text-decoration-color: $white-color;
+                transition: all .3s ease;
+
+                &:hover {
+                    color: $gray-color;
+                    text-decoration: underline;
+                    text-underline-offset: 2.56rem;
+                    text-decoration-color: $main-color;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+    }
+
+    #hamburger-nav {
+        display: none;
+
+        .hamburger-menu {
+            position: relative;
+            display: inline-block;
+
+            &-icon {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 2.4rem;
+                width: 3rem;
+                cursor: pointer;
+
+                span {
+                    width: 100%;
+                    height: .2rem;
+                    background-color: $main-color;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            &-links {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background-color: white;
+                width: fit-content;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        display: block;
+                        padding: 10px;
+                        text-align: center;
+                        font-size: 1.5rem;
+                        color: var(--alt-color);
+                        text-decoration: none;
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+                
+                &.open {
+                    max-height: 300px;
+                    border-radius: 10px;
+                    border: 1px solid var(--main-color);
+                    margin-top: 7px;
+                }
+        
+                &.open span:first-child {
+                    transform: rotate(45deg) translate(10px, 5px);
+                }
+        
+                &.open span:nth-child(2) {
+                    opacity: 0;
+                }
+        
+                &.open span:last-child {
+                    transform: rotate(-45deg) translate(10px, -5px);
+                }
+            }
+        }
+
+    }
+}

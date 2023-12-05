@@ -1,0 +1,94 @@
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    height: 80vh;
+
+    .section-img {
+        display: flex;
+        height: 40rem;
+        width: 40rem;
+        margin: auto 0;
+
+        img {
+            border-radius: 50%;
+            border: 0.5rem solid $main-color;
+        }
+    }
+
+    .section-main-text {
+        align-self: center;
+        text-align: center;
+
+        p {
+            font-weight: 600;
+        }
+
+        .section-text-p1 {
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .title {
+            color: $socend-color;
+            font-size: 4.8rem;
+            text-align: center;
+        }
+
+        .section-text-p2 {
+            font-size: 2.25rem;
+            margin-bottom: 1.6rem;
+        }
+
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.6rem;
+
+            .btn {
+                font-weight: 600;
+                transition: all .3s ease;
+                padding: 1.6rem;
+                width: 12.8rem;
+                border-radius: 3.2rem;
+
+                &-color-1,
+                &-color-2 {
+                    border: $btn-color-dark 1px solid;
+
+                    &:hover,
+                    &:hover {
+                        cursor: pointer;
+                        background-color: $main-color;
+                        color: $white-color;
+                        border: none;
+                    }
+                }
+
+                &-color-1 {
+                    background-color: $blak-color;
+                    color: $white-color;
+                }
+
+                &-color-2 {
+                    background-color: $white-color;
+                    color: $blak-color;
+                }
+            }
+        }
+        .socials-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.6rem;
+            gap: 1.6rem;
+            .icon {
+                cursor: pointer;
+                height: 3.5rem;
+
+                &:nth-child(1) {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

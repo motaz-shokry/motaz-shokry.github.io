@@ -1,0 +1,49 @@
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        border-radius: 3.2rem;
+        border: 1px solid $main-color;
+        margin: 3.2rem auto;
+        padding: 0.8rem;
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            justify-content: center;
+            margin: 1.6rem;
+
+            p {
+                font-size: 2rem;
+
+                a {
+                    color: $blak-color;
+                    text-decoration: none;
+                    text-decoration-color: $white-color;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: $gray-color;
+                        text-decoration: underline;
+                        text-underline-offset: 1.6rem;
+                        text-decoration-color: $main-color;
+                    }
+                }
+            }
+
+            .icon {
+                cursor: default;
+            }
+
+            .email-icon {
+                height: 4rem;
+            }
+        }
+    }
+}

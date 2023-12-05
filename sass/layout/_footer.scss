@@ -1,0 +1,37 @@
+footer {
+    height: 6vh;
+    margin: 0 1rem;
+
+    p {
+        text-align: center;
+    }
+
+    nav {
+        justify-content: space-around;
+        align-items: center;
+        height: 17vh;
+        display: flex;
+
+        .links {
+            gap: 3.2rem;
+            list-style: none;
+            font-size: 2.5rem;
+            display: flex;
+
+            a {
+                color: $blak-color;
+                text-decoration: none;
+                text-decoration-color: $white-color;
+                transition: all .3s ease;
+
+                &:hover {
+                    color: $gray-color;
+                    text-decoration: underline;
+                    text-underline-offset: 2.56rem;
+                    text-decoration-color: $main-color;
+                    transition: all .3s ease-in-out;
+                }
+            }
+        }
+    }
+}

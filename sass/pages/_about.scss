@@ -1,0 +1,47 @@
+#about {
+    position: relative;
+
+    .about-container {
+        display: flex;
+        gap: 6.4rem;
+        height: 80%;
+
+        .section-img {
+            display: flex;
+            width: 40rem;
+            height: 40rem;
+            margin: auto 0;
+
+            img {
+                border-radius: 3.2rem;
+                filter: grayscale(100);
+            }
+        }
+        .details {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            &-containers {
+                display: flex;
+                gap: 3.2rem;
+                margin-bottom: 3.2rem;
+                margin-top: 3.2rem;
+
+                .details-container {
+                    padding: 2.4rem;
+                    flex: 1;
+                    background: $white-color;
+                    border-radius: 3.2rem;
+                    border: $socend-color solid 2px;
+                    text-align: center;
+
+                    img {
+                        height: 3.2rem;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
